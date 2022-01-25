@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;1,100&family=Press+Start+2P&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <H1 class="tittle">Rock Paper Scissors </br> VS Machina</H1>
+            <h4 class="subtittle">First to 5 wins</h4>
+
+        </div>
+    </header>
+    <section class="game">
+        <div class="human">
+            <h3>Your pick</h3>
+            <img id="playerPick" src="images/r-trimed.png" alt="">
+        </div>
+        <div class="score-result">
+            <div class="score">
+                <h2>Score</h2>
+                <span id="playerScore">0</span><span id="separator"> - </span><span id="cpuScore">0</span>
+
+            </div>
+            <div class="result">
+                <p></p>
+            </div>
+        </div>
+        <div class="cpu">
+            <h3>Machina pick</h3>
+            <img id="cpuPick" src="images/r-trimed.png" alt="">
+        </div>
+    </section>
+    <section class="choices">
+        <div class="choice" id="rock"><img class="rockImg" src="images/r-trimed.png" alt=""></div>
+        <div class="choice" id="paper"><img src="images/p-trimed.png" alt=""></div>
+        <div class="choice" id="scissors"><img src="images/s-trimed.png" alt=""></div>
+    </section>
+
+
+    <footer>
+        <h4 class="textFooter">
+
+        </h4>
+    </footer>
+
+    <div id="simpleModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn"><i class="fas fa-times"></i></span>
+                <h2></h2>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="play-again">
+                <a href="#" class="neon-button">Play again</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
